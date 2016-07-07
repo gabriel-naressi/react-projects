@@ -10,7 +10,7 @@ class TodoItem extends React.Component {
 
     render() {
         return (
-            <li> Teste </li>
+            <li> {this.props.value} </li>
         )
     }
 }

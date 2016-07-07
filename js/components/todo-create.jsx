@@ -3,11 +3,11 @@
  */
 import React from 'react';
 import TodoActions from '../actions/TodoActions';
+import TodoStore from '../store/todo.store';
 
 class TodoCreate extends React.Component {
     constructor() {
         super();
-        this.save = this.save.bind(this);
     }
 
     save(e) {

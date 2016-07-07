@@ -2,13 +2,13 @@
  * Created by gabriel on 07/07/16.
  */
 import TodoDispatcher from '../core/dispatcher/dispatcher';
-import ActionTypes from '../constants/ActionTypes';
+import * as types from '../constants/ActionTypes';
 
 const TodoActions = {
     saveTodo(value) {
         debugger;
         TodoDispatcher.dispatch({
-            type: ActionTypes.SAVE_TODO,
+            type: types.SAVE_TODO,
             value: value
         });
     }
