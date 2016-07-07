@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './components/hello-world.jsx';
+import Todo from './components/todo.jsx';
 
 var mountNode = document.getElementById('application');
 
-ReactDOM.render(<HelloWorld />, mountNode);
+ReactDOM.render(<Todo />, mountNode);

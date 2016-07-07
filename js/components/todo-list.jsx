@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoItem from './todo-item.jsx';
 
 class HelloWorld extends React.Component {
     constructor() {
@@ -8,9 +9,11 @@ class HelloWorld extends React.Component {
     render() {
         return (
             <div>
-                <h2> Hello World! </h2>
+                <ul>
+                    <TodoItem />
+                </ul>
             </div>
-        )
+        );
 
     }
 }
