@@ -1,0 +1,51 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Um exemplo de react para treinar colocar no git hub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --port 3000 --inline --hot",
+    "watch": "webpack --progress --color --watch --env.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-projects"
+  },
+  "author": "Gabriel Naressi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-webpack-alias": "^1.3.1",
+    "babel-preset-es2015-webpack": "^6.4.1",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "compression-webpack-plugin": "^0.3.1",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.3.0",
+    "eslint": "^3.0.1",
+    "eslint-plugin-react": "^5.2.2",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "istanbul": "^0.4.4",
+    "jsdom": "^9.4.1",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.5.3",
+    "node-libs-browser": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "2.1.0-beta.7",
+    "webpack-validator": "^2.2.2"
+  }
+}
