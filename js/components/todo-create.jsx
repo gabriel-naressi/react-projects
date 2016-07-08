@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import TodoActions from '../actions/TodoActions';
-import TodoStore from '../store/todo.store';
+import _uniqueId from 'lodash/uniqueId';
 
 class TodoCreate extends React.Component {
     constructor() {
@@ -11,7 +11,10 @@ class TodoCreate extends React.Component {
     }
 
     save(e) {
-        TodoActions.saveTodo(this.refs.task.value);
+        TodoActions.saveTodo({
+            id: _uniqueId(),
+            value:this.refs.task.value
+        });
     }
 
     render() {

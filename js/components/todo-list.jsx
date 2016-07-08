@@ -30,8 +30,10 @@ class HelloWorld extends React.Component {
         var items = this.state.todos.map((todo, index) => {
             return (
                 <TodoItem
-                    key={index}
-                    value={todo.value} />
+                    key={todo.id}
+                    id={todo.id}
+                    value={todo.value}
+                />
             );
         });
 

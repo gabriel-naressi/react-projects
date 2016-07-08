@@ -5,11 +5,17 @@ import TodoDispatcher from '../core/dispatcher/dispatcher';
 import * as types from '../constants/ActionTypes';
 
 const TodoActions = {
-    saveTodo(value) {
-        debugger;
+    saveTodo(data) {
         TodoDispatcher.dispatch({
             type: types.SAVE_TODO,
-            value: value
+            data: data
+        });
+    },
+
+    deleteTodo(id) {
+        TodoDispatcher.dispatch({
+            type: types.DELETE_TODO,
+            id: id
         });
     }
 };
