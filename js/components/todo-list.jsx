@@ -2,27 +2,13 @@ import React from 'react';
 import TodoItem from './todo-item.jsx';
 import TodoStore from '../store/todo.store';
 
-class HelloWorld extends React.Component {
+class TodoList extends React.Component {
     constructor() {
         super();
         this.state = {
             todos: TodoStore.getTodos()
         };
         this.change = this.change.bind(this);
-    }
-
-    componentDidMount(){
-        TodoStore.addChangeListener(this.change);
-    }
-
-    componentWillUnmount(){
-        TodoStore.removeChangeListener(this.change);
-    }
-
-    change() {
-        this.setState({
-            todos: TodoStore.getTodos()
-        });
     }
 
     render() {
@@ -48,5 +34,5 @@ class HelloWorld extends React.Component {
     }
 }
 
-HelloWorld.displayName = "HelloWorld";
-export default HelloWorld;
+TodoList.displayName = "TodoList";
+export default TodoList;
