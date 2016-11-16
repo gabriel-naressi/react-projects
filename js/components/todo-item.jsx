@@ -15,15 +15,12 @@ class TodoItem extends React.Component {
 
     render() {
         return (
-            <div>
-                <li>
-                    ID: {this.props.id}
-                    {this.props.value}
-                    <button onClick={() => this.deleteTodo(this.props.id)}> X </button>
-                </li>
-
-            </div>
-        )
+            <li>
+                ID: {this.props.id}
+                {this.props.value}
+                <button onClick={() => this.deleteTodo(this.props.id)}> X </button>
+            </li>
+        );
     }
 }
 

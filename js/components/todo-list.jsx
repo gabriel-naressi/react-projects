@@ -8,7 +8,19 @@ class TodoList extends React.Component {
         this.state = {
             todos: TodoStore.getTodos()
         };
-        this.change = this.change.bind(this);
+        this._onChange = this._onChange.bind(this);
+    }
+
+    componentDidMount() {
+        TodoStore.addChangeListener(this._onChange);    
+    }
+
+    componentWillUnmount() {
+        TodoStore.removeChangeListener(this._onChange);
+    }
+
+    _onChange() {
+        this.setState({ todos: TodoStore.getTodos() });
     }
 
     render() {
